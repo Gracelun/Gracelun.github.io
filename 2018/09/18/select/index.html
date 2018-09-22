@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="印出 語法：print_r()：用來印出陣列的內容  語法：print　“字串”：用來印出字串   範例：   12345&amp;lt;?php 	$age = 24;	print &quot;bing $age&quot;;	print &quot;bing&quot;.$age;?&amp;gt;   輸出：  bing 24bing 24">
+<meta name="description" content="SELECT查詢">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP基本指令">
-<meta property="og:url" content="http://yoursite.com/2018/04/14/php_article/index.html">
+<meta property="og:title" content="PHP SELECT">
+<meta property="og:url" content="http://yoursite.com/2018/09/18/select/index.html">
 <meta property="og:site_name" content="Grace&#39;s Blog">
-<meta property="og:description" content="印出 語法：print_r()：用來印出陣列的內容  語法：print　“字串”：用來印出字串   範例：   12345&amp;lt;?php 	$age = 24;	print &quot;bing $age&quot;;	print &quot;bing&quot;.$age;?&amp;gt;   輸出：  bing 24bing 24">
+<meta property="og:description" content="SELECT查詢">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2018-08-14T08:20:45.457Z">
+<meta property="og:updated_time" content="2018-09-19T06:34:13.626Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PHP基本指令">
-<meta name="twitter:description" content="印出 語法：print_r()：用來印出陣列的內容  語法：print　“字串”：用來印出字串   範例：   12345&amp;lt;?php 	$age = 24;	print &quot;bing $age&quot;;	print &quot;bing&quot;.$age;?&amp;gt;   輸出：  bing 24bing 24">
+<meta name="twitter:title" content="PHP SELECT">
+<meta name="twitter:description" content="SELECT查詢">
 
 
 
@@ -134,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/14/php_article/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/18/select/"/>
 
 
 
 
 
-  <title>PHP基本指令 | Grace's Blog</title>
+  <title>PHP SELECT | Grace's Blog</title>
   
 
 
@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/php_article/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/18/select/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Grace">
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">PHP基本指令</h1>
+          <h1 class="post-title" itemprop="name headline">PHP SELECT</h1>
         
 
         <div class="post-meta">
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">發表於</span>
               
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-04-14T00:02:56+08:00">
-                2018-04-14
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-09-18T00:08:34+08:00">
+                2018-09-18
               </time>
             
 
@@ -330,44 +330,14 @@
       
 
       
-        <h2 id="印出"><a href="#印出" class="headerlink" title="印出"></a>印出</h2><ul>
-<li><p>語法：print_r()：用來印出陣列的內容</p>
-</li>
-<li><p>語法：print　“字串”：用來印出字串</p>
-<p>  範例：</p>
-  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">	$age = <span class="number">24</span>;</span><br><span class="line">	<span class="keyword">print</span> <span class="string">"bing $age"</span>;</span><br><span class="line">	<span class="keyword">print</span> <span class="string">"bing"</span>.$age;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  輸出：<br>  bing 24bing 24</p>
-<a id="more"></a></li>
-<li><p>語法：echo　“字串”：用來印出字串</p>
-<p>  範例1：</p>
-  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">	$age = <span class="number">24</span>;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"bing $age"</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  輸出：<br>  bing 24</p>
-<p>  範例2：</p>
-  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> 	</span><br><span class="line">	$age = <span class="number">24</span>;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'bing $age'</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p>  輸出：<br>  bing $age</p>
-</li>
-</ul>
-<h2 id="字串"><a href="#字串" class="headerlink" title="字串"></a>字串</h2><ul>
-<li>字串相加使用.<br>  範例：  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'沒有'</span>.$email.<span class="string">'用戶'</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="密碼加密"><a href="#密碼加密" class="headerlink" title="密碼加密"></a>密碼加密</h2><ul>
-<li>語法：md5();<br>  範例：  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">	$token = date(<span class="string">"Y/m/d"</span>).$email.$password;</span><br><span class="line">	$token = md5($token);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="單引號與雙引號的差別"><a href="#單引號與雙引號的差別" class="headerlink" title="單引號與雙引號的差別"></a>單引號與雙引號的差別</h2><ul>
-<li><p>範例：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $test = <span class="number">1</span> ; <span class="comment">//這是一個變數，值為1</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'$test'</span> ;      <span class="comment">//狀況一</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"$test"</span> ;      <span class="comment">//狀況二</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">' "$test" '</span> ;  <span class="comment">//狀況三</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">" '$test' "</span> ;  <span class="comment">//狀況四</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>輸出：<br>$test<br>1<br>“$test”<br>‘1’</p>
-</li>
-</ul>
+        <h3 id="SELECT查詢"><a href="#SELECT查詢" class="headerlink" title="SELECT查詢"></a>SELECT查詢</h3><a id="more"></a>
 <ul>
-<li>說明：<br>單引號：會把單引號包起來的部分當作是「字串」直接輸出，不會解析內容<br>雙引號：會對內容進行解析並把變數實際內容輸出<br>單引號包雙引號：就跟單引號包任何東西一樣，單引號內的東西都不會被解析，直接當字串輸出<br>雙引號包單引號：對雙引號而言，單引號只是符號，一樣解析裡面的內容</li>
-</ul>
-<h2 id="JSON-PHP"><a href="#JSON-PHP" class="headerlink" title="JSON PHP"></a>JSON PHP</h2><ul>
-<li>陣列 =&gt; json_encode() =&gt; 字串</li>
-<li>字串 =&gt; json_decode() =&gt; 陣列</li>
+<li><p>新增function - getProduct()</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getProduct</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		$data = <span class="keyword">array</span>();</span><br><span class="line">		$sql = <span class="string">"SELECT * FROM `merchandise`;"</span>;</span><br><span class="line">		$result = <span class="keyword">$this</span>-&gt;connection-&gt;query($sql);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">while</span>($row = $result-&gt;fetch_array()) &#123;</span><br><span class="line">			$data[] = $row;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (count($data) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> $data;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">FALSE</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>productmanage.php(撈出資料庫資訊)</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	<span class="meta">&lt;?php</span></span><br><span class="line">	<span class="keyword">include</span> <span class="string">'../lib/lib_merchandise.php'</span>;</span><br><span class="line">	$merchandise = <span class="keyword">new</span> merchandise();</span><br><span class="line">	$product = $merchandise-&gt;getProduct();</span><br><span class="line"></span><br><span class="line">	<span class="meta">?&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">foreach</span> ($product <span class="keyword">as</span> $key =&gt; $value) &#123;</span><br><span class="line">		<span class="meta">?&gt;</span></span><br><span class="line">		&lt;p&gt;<span class="meta">&lt;?</span>=$key<span class="meta">?&gt;</span>&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;<span class="meta">&lt;?</span>=$value[<span class="string">'name'</span>]<span class="meta">?&gt;</span>&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;<span class="meta">&lt;?</span>=$value[<span class="string">'price'</span>]<span class="meta">?&gt;</span>&lt;/p&gt;</span><br><span class="line">		<span class="meta">&lt;?php</span> </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">?&gt;</span></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 
       
@@ -399,8 +369,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/13/first_article/" rel="next" title="使用Hexo在Github架BLOG">
-                <i class="fa fa-chevron-left"></i> 使用Hexo在Github架BLOG
+              <a href="/2018/09/18/create/" rel="next" title="PHP Create">
+                <i class="fa fa-chevron-left"></i> PHP Create
               </a>
             
           </div>
@@ -409,8 +379,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/05/git/" rel="prev" title="Git">
-                Git <i class="fa fa-chevron-right"></i>
+              <a href="/2018/09/19/delete/" rel="prev" title="PHP DELETE">
+                PHP DELETE <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -536,7 +506,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#印出"><span class="nav-number">1.</span> <span class="nav-text">印出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字串"><span class="nav-number">2.</span> <span class="nav-text">字串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#密碼加密"><span class="nav-number">3.</span> <span class="nav-text">密碼加密</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#單引號與雙引號的差別"><span class="nav-number">4.</span> <span class="nav-text">單引號與雙引號的差別</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON-PHP"><span class="nav-number">5.</span> <span class="nav-text">JSON PHP</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#SELECT查詢"><span class="nav-number">1.</span> <span class="nav-text">SELECT查詢</span></a></li></ol></div>
             
 
           </div>
