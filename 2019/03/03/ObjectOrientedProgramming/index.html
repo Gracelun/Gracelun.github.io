@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="PHP," />
+  <meta name="keywords" content="PHP,OOP," />
 
 
 
@@ -94,18 +94,15 @@
 
 
 
-<meta name="description" content="SELECT查詢">
-<meta name="keywords" content="PHP">
+<meta name="keywords" content="PHP,OOP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP SELECT">
-<meta property="og:url" content="http://yoursite.com/2018/09/18/select/index.html">
+<meta property="og:title" content="Object Oriented Programming，OOP，物件導向程式設計">
+<meta property="og:url" content="http://yoursite.com/2019/03/03/ObjectOrientedProgramming/index.html">
 <meta property="og:site_name" content="Grace&#39;s Blog">
-<meta property="og:description" content="SELECT查詢">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2018-09-19T06:34:13.626Z">
+<meta property="og:updated_time" content="2019-03-03T06:36:21.746Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PHP SELECT">
-<meta name="twitter:description" content="SELECT查詢">
+<meta name="twitter:title" content="Object Oriented Programming，OOP，物件導向程式設計">
 
 
 
@@ -134,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/18/select/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/03/03/ObjectOrientedProgramming/"/>
 
 
 
 
 
-  <title>PHP SELECT | Grace's Blog</title>
+  <title>Object Oriented Programming，OOP，物件導向程式設計 | Grace's Blog</title>
   
 
 
@@ -263,7 +260,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/18/select/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/03/ObjectOrientedProgramming/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Grace">
@@ -280,7 +277,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">PHP SELECT</h1>
+          <h1 class="post-title" itemprop="name headline">Object Oriented Programming，OOP，物件導向程式設計</h1>
         
 
         <div class="post-meta">
@@ -292,8 +289,8 @@
               
                 <span class="post-meta-item-text">發表於</span>
               
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-09-18T00:08:34+08:00">
-                2018-09-18
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2019-03-03T00:14:36+08:00">
+                2019-03-03
               </time>
             
 
@@ -330,16 +327,7 @@
       
 
       
-        <h3 id="SELECT查詢"><a href="#SELECT查詢" class="headerlink" title="SELECT查詢"></a>SELECT查詢</h3><a id="more"></a>
-<ul>
-<li><p>新增function - getProduct()</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getProduct</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		$data = <span class="keyword">array</span>();</span><br><span class="line">		$sql = <span class="string">"SELECT * FROM `merchandise`;"</span>;</span><br><span class="line">		$result = <span class="keyword">$this</span>-&gt;connection-&gt;query($sql);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">while</span>($row = $result-&gt;fetch_array()) &#123;</span><br><span class="line">			$data[] = $row;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (count($data) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> $data;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">FALSE</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>productmanage.php(撈出資料庫資訊)</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	<span class="meta">&lt;?php</span></span><br><span class="line">	<span class="keyword">include</span> <span class="string">'../lib/lib_merchandise.php'</span>;</span><br><span class="line">	$merchandise = <span class="keyword">new</span> merchandise();</span><br><span class="line">	$product = $merchandise-&gt;getProduct();</span><br><span class="line"></span><br><span class="line">	<span class="meta">?&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">foreach</span> ($product <span class="keyword">as</span> $key =&gt; $value) &#123;</span><br><span class="line">		<span class="meta">?&gt;</span></span><br><span class="line">		&lt;p&gt;<span class="meta">&lt;?</span>=$key<span class="meta">?&gt;</span>&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;<span class="meta">&lt;?</span>=$value[<span class="string">'name'</span>]<span class="meta">?&gt;</span>&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;<span class="meta">&lt;?</span>=$value[<span class="string">'price'</span>]<span class="meta">?&gt;</span>&lt;/p&gt;</span><br><span class="line">		<span class="meta">&lt;?php</span> </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">?&gt;</span></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
+        
       
     </div>
     
@@ -358,6 +346,8 @@
           
             <a href="/tags/PHP/" rel="tag"># PHP</a>
           
+            <a href="/tags/OOP/" rel="tag"># OOP</a>
+          
         </div>
       
 
@@ -369,8 +359,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/18/create/" rel="next" title="PHP Create">
-                <i class="fa fa-chevron-left"></i> PHP Create
+              <a href="/2018/09/19/delete/" rel="next" title="PHP DELETE">
+                <i class="fa fa-chevron-left"></i> PHP DELETE
               </a>
             
           </div>
@@ -378,10 +368,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/19/delete/" rel="prev" title="PHP DELETE">
-                PHP DELETE <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -433,17 +419,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目錄
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            本站概覽
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -496,22 +473,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#SELECT查詢"><span class="nav-number">1.</span> <span class="nav-text">SELECT查詢</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
